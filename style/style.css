@@ -38,17 +38,13 @@ header {
   width: 100%;
 }
 
-.navigation_bar {
+nav {
   display: flex;
   align-items: center;
-  padding: 0 20px;
-  min-width: 30%;
-  justify-content: space-between;
 }
 
-.nav_about,
-.nav_resume,
-.nav_contact {
+nav > ul > li {
+  display: inline;
   padding: 0 20px;
 }
 
@@ -68,5 +64,55 @@ header {
 .logos_container img {
   max-width: 25px;
   width: 100%;
-  line: red;
+}
+
+/* Below is style for my form. */
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  width: fit-content;
+  border: none;
+  border-bottom: 3px solid var(--secondary-very-light-grey);
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+/* Ci-dessous, table specification */
+
+table {
+  width: 60%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.skill {
+  font-weight: bold;
+}
+th {
+  text-align: left;
+  padding-bottom: 0px;
+  padding-top: 10px;
+  font-weight: normal;
+}
+
+.certif_table {
+  padding-left: 33px;
 }

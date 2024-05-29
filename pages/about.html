@@ -17,14 +17,22 @@
     <main>
       <header>
         <div class="logo_container">
-          <a href="../index.html">
-            <img src="../media/logo.svg" alt="Ralph's logo"
+          <a href="../index.html"
+            ><img src="../media/logo.svg" alt="Ralph's logo"
           /></a>
         </div>
-        <nav class="navigation_bar">
-          <div class="nav_about"><a href="./about.html">About</a></div>
-          <div class="nav_resume">Resume</div>
-          <div class="nav_contact"><a href="./contact.html">Contact</a></div>
+        <nav>
+          <ul class="navigation_bar" role="menubar">
+            <li class="nav_item" role="presentation">
+              <a href="./about.html">About</a>
+            </li>
+            <li class="nav_item" role="presentation">
+              <a href="../media/documents/CV - Ralph Pastel.pdf">Resume</a>
+            </li>
+            <li class="nav_item" role="presentation">
+              <a href="./contact.html">Contact</a>
+            </li>
+          </ul>
         </nav>
       </header>
       <article>
@@ -46,6 +54,47 @@
           Sed suscipit bibendum arcu, a pretium risus efficitur ac. Nunc odio
           arcu, dapibus placerat felis et, efficitur molestie est.
         </p>
+        <br />
+        <p>Ok, but what are my skills? Please check below:</p>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col" class="skill">Languages:</th>
+              <th scope="col" rowspan="2" class="skill">Technical Skills:</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="unordered_list">
+              <th>
+                <ul class="bullet_point">
+                  <li>French: Native</li>
+                  <li>English: Fluent</li>
+                  <li>German: B1 level</li>
+                  <li>Creole: Native</li>
+                  <li>Spanish: School level</li>
+                </ul>
+              </th>
+              <th>
+                <ul class="bullet_point">
+                  <li>Trello</li>
+                  <li>Jira</li>
+                  <li>SQL Queries</li>
+                  <li>Figma & Balsamiq</li>
+                  <li>Appcues</li>
+                </ul>
+              </th>
+              <th>
+                <ul class="bullet_point">
+                  <li>Amplitude</li>
+                  <li>Rollbar</li>
+                  <li>GitHub</li>
+                  <li>MS Office</li>
+                  <li>HTML, CSS, JS</li>
+                </ul>
+              </th>
+            </tr>
+          </tbody>
+        </table>
       </article>
       <div class="illustration_page"></div>
       <footer>
