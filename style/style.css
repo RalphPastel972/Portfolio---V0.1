@@ -23,6 +23,7 @@ main {
   margin: auto;
 }
 
+/* Styling of Header and Navbar */
 header {
   width: 100%;
   display: flex;
@@ -45,7 +46,18 @@ nav {
 
 nav > ul > li {
   display: inline;
-  padding: 0 20px;
+  padding: 10px 20px;
+  font-size: large;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav > ul > li:hover {
+  background-color: var(--primary-dalia-green);
+  border-radius: 15px;
 }
 
 .button {
