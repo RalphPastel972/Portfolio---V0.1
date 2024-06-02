@@ -20,7 +20,7 @@
   <body>
     <main>
       <header>
-        <div class="logo_container">
+        <div class="logos_wrapper">
           <img src="./media/logo.svg" alt="Ralph's logo" />
         </div>
         <nav>
@@ -29,7 +29,7 @@
               <a href="./pages/about.html">About</a>
             </li>
             <li class="nav_item" role="presentation">
-              <a href="./media/documents/CV - Ralph Pastel.pdf">Resume</a>
+              <a href="./pages/work.html">Work</a>
             </li>
             <li class="nav_item" role="presentation">
               <a href="./pages/contact.html">Contact</a>
@@ -38,20 +38,43 @@
         </nav>
       </header>
       <article>
-        <h1 class="catch_phrase">
-          Hi! I’m Ralph and I’m a Junior Web Developer
-        </h1>
-        <p>
-          I’m a Junior Web developper based in Berlin, germany. I have 2 weeks
-          of experience and I specialize in creating web apps. I am open for new
-          opportunities and interesting projects.
-        </p>
+        <div class="main_chapeau">
+          <section class="main_chapeau_text">
+            <h1 class="catch_phrase">
+              Hi! <br />
+              I’m Ralph and I’m a
+              <span class="dalia_style">Junior Web Developer</span>
+            </h1>
+            <p>
+              I’m a Junior Web developper based in Berlin, germany. I have 2
+              weeks of experience and I specialize in creating web apps. I am
+              open for new opportunities and interesting projects.
+            </p>
+          </section>
+          <div class="main_photo">
+            <img
+              src="./media/photos/E-portfolio-JPEG-600.jpg"
+              alt="Smily portrait of Ralph"
+              srcset="
+                ./media/photos/E-portfolio-AVIF-200.avif 200w,
+                ./media/photos/E-portfolio-AVIF-300.avif 300w,
+                ./media/photos/E-portfolio-AVIF-400.avif 400w,
+                ./media/photos/E-portfolio-AVIF-600.avif 600w,
+                ./media/photos/E-portfolio-JPEG-300.avif 300w
+              "
+            />
+          </div>
+        </div>
       </article>
-      <div class="illustration_page"></div>
+
       <footer>
-        <div class="logos_container">
-          <img src="./media/svg/X_logo.svg" alt="Twitter's logo" />
-          <img src="./media/svg/linkedin-logo.svg" alt="Linkedin's logo" />
+        <div class="logos_wrapper">
+          <a href="https://github.com/RalphPastel972"
+            ><img src="../media/svg/github.svg" alt="Github's logo"
+          /></a>
+          <a href="https://www.linkedin.com/in/ralphpastel/"
+            ><img src="../media/svg/linkedin-logo.svg" alt="Linkedin's logo"
+          /></a>
         </div>
       </footer>
     </main>

@@ -19,8 +19,15 @@ body {
 }
 
 main {
-  max-width: 1440px;
+  max-width: 1200px;
   margin: auto;
+  min-height: calc(100vh - 2 * 16px);
+  display: flex;
+  flex-direction: column;
+}
+
+.dalia_style {
+  color: var(--primary-dalia-green);
 }
 
 /* Styling of Header and Navbar */
@@ -30,35 +37,106 @@ header {
   justify-content: space-between;
   background-color: var(--primary-pink-pastel);
   padding: 10px 15px;
-
   border-radius: 20px 20px 0 0;
+
+  .logos_wrapper img {
+    max-width: 50px;
+    width: 100%;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  nav > ul > li {
+    display: inline;
+    padding: 10px 20px;
+    font-size: large;
+  }
+
+  nav > ul > li > a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  nav > ul > li:hover {
+    background-color: var(--primary-dalia-green);
+    border-radius: 15px;
+  }
 }
 
-.logo_container img {
-  max-width: 50px;
-  width: 100%;
-}
-
-nav {
+/* Styling of the main content of the page */
+.main_chapeau {
   display: flex;
-  align-items: center;
+
+  .main_chapeau_text {
+    padding: 2em 8em 2em 2em;
+    width: 75%;
+  }
+
+  .main_photo {
+    width: 30%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-weight: 400;
+    font-size: xxx-large;
+    line-height: 2em;
+    margin: 0;
+  }
+
+  p {
+    line-height: 2em;
+    font-size: larger;
+  }
 }
 
-nav > ul > li {
-  display: inline;
-  padding: 10px 20px;
-  font-size: large;
+/* Work Styling */
+.projects_section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 1em;
+  margin-bottom: 2em;
+
+  .project_card {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    min-width: 250px;
+    height: fit-content;
+    justify-items: center;
+    box-shadow: 3px 3px 10px var(--secondary-soft-grey);
+  }
+
+  .project_card_title {
+    font-size: large;
+    font-weight: 500;
+    color: var(--primary-dalia-green);
+    text-align: center;
+    padding: 0.5em;
+  }
+
+  .project_card_illustration {
+    width: 80%;
+    height: 150px;
+    border: 1px solid var(--secondary-soft-grey);
+    margin: 1em auto;
+    text-align: center;
+  }
+
+  .project_card_description {
+    padding: 1em;
+    margin: 1em 2em;
+  }
 }
 
-nav > ul > li > a {
-  text-decoration: none;
-  color: #000;
-}
-
-nav > ul > li:hover {
-  background-color: var(--primary-dalia-green);
-  border-radius: 15px;
-}
+/* Contact styling */
 
 .button {
   background-color: var(--primary-pink-pastel);
@@ -73,38 +151,33 @@ nav > ul > li:hover {
   background-color: rgb(232, 104, 211);
 }
 
-.logos_container img {
-  max-width: 25px;
-  width: 100%;
-}
-
 /* Below is style for my form. */
 form {
   width: 60vw;
   max-width: 500px;
   min-width: 300px;
   padding-bottom: 2em;
-}
 
-fieldset {
-  display: flex;
-  flex-direction: column;
-  padding: 2em;
-  width: fit-content;
-  border: none;
-  border-bottom: 3px solid var(--secondary-very-light-grey);
-}
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    width: fit-content;
+    border: none;
+    border-bottom: 3px solid var(--secondary-very-light-grey);
+  }
 
-label {
-  display: block;
-  margin: 0.5rem 0;
-}
+  label {
+    display: block;
+    margin: 0.5rem 0;
+  }
 
-input,
-textarea {
-  margin: 10px 0 0 0;
-  width: 100%;
-  min-height: 2em;
+  input,
+  textarea {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+  }
 }
 
 /* Ci-dessous, table specification */
@@ -113,18 +186,32 @@ table {
   width: 60%;
   margin-bottom: 20px;
   margin-top: 10px;
+
+  .skill {
+    font-weight: bold;
+  }
+
+  th {
+    text-align: left;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    font-weight: normal;
+  }
 }
 
-.skill {
-  font-weight: bold;
-}
-th {
-  text-align: left;
-  padding-bottom: 0px;
-  padding-top: 10px;
-  font-weight: normal;
-}
+/* Styling of the footer */
+footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
 
-.certif_table {
-  padding-left: 33px;
+  .logos_wrapper img {
+    max-width: 25px;
+    width: 100%;
+  }
+
+  .logos_wrapper {
+    display: flex;
+    gap: 1.5em;
+  }
 }
