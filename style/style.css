@@ -74,6 +74,11 @@ header {
     width: 75%;
   }
 
+  .chapeau_text_without_pic {
+    padding: 2em 2em 2em 2em;
+    width: 100%;
+  }
+
   .chapeau_text {
     padding: 0em 7em 2em 2em;
     width: 75%;
@@ -111,6 +116,11 @@ header {
   justify-items: center;
   gap: 1em;
   margin-bottom: 2em;
+
+  .main_chapeau_text {
+    padding: 2em 2em 2em 2em;
+    width: 100%;
+  }
 
   .project_card {
     display: flex;
@@ -159,7 +169,7 @@ header {
   background-color: rgb(232, 104, 211);
 }
 
-/* Below is style for my form. */
+/* Below, form specifications */
 form {
   min-width: 300px;
   padding-bottom: 2em;
@@ -204,8 +214,7 @@ form {
   }
 }
 
-/* Ci-dessous, table specification */
-
+/* Below, table specifications */
 table {
   width: 60%;
   margin-bottom: 20px;
@@ -260,6 +269,7 @@ footer {
   }
 }
 
+/* Responsiveness */
 @media screen and (max-width: 800px) {
   .main_photo {
     display: none;
@@ -278,5 +288,10 @@ footer {
       line-height: 1.3em;
       margin: 0;
     }
+  }
+
+  .projects_section {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
