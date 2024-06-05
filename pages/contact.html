@@ -20,9 +20,9 @@
   <body>
     <main>
       <header>
-        <div class="logos_wrapper">
+        <div class="ralph_logo_wrapper">
           <a href="../index.html"
-            ><img src="../media/logo.svg" alt="Ralph's logo"
+            ><img src="../media/svg/logo.svg" alt="Ralph's logo"
           /></a>
         </div>
         <nav>
@@ -40,58 +40,99 @@
         </nav>
       </header>
       <article>
-        <h1 class="page_title">Contact</h1>
+        <div class="main_chapeau">
+          <section class="chapeau_text">
+            <h1 class="page_title">Contact me</h1>
 
-        <p>If you want to contact me, please fill the formular below:</p>
-        <!-- In CF example, there is no <label for="id_of-the-input>" but I added it nonetheless for accessibility reasons-->
-        <form action="post">
-          <fieldset>
-            <label for="first-name"
-              >Enter Your First Name:
-              <input id="first-name" name="first-name" type="text" required
-            /></label>
-            <label for="last-name"
-              >Enter Your Last Name:
-              <input id="last-name" name="last-name" type="text" required
-            /></label>
-            <label for="email"
-              >Enter Your Email:
-              <input id="email" name="email" type="email" required
-            /></label>
-            <label for="project_description"
-              >Describe your project:
-              <textarea
-                id="project_description"
-                name="project_description"
-                rows="3"
-                cols="30"
-                placeholder="I need a website and I would like to hire you..."
-              ></textarea>
-            </label>
-          </fieldset>
+            <form action="post">
+              <fieldset class="form_one_column_fieldset">
+                <label for="first-name"
+                  >First Name:
+                  <input
+                    id="first-name"
+                    name="first-name"
+                    type="text"
+                    required
+                    placeholder="Jane"
+                /></label>
+                <label for="last-name"
+                  >Last Name:
+                  <input
+                    id="last-name"
+                    name="last-name"
+                    type="text"
+                    required
+                    placeholder="Doe"
+                /></label>
 
-          <input type="submit" value="Submit" />
-        </form>
+                <label for="email"
+                  >Email address
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    placeholder="example@email.com"
+                /></label>
+                <label for="project_description"
+                  >Tell me about your project:
+                  <textarea
+                    id="project_description"
+                    name="project_description"
+                    rows="3"
+                    cols="30"
+                    placeholder="I need a website and I would like to hire you..."
+                  ></textarea>
+                </label>
+              </fieldset>
 
-        <div class="direct_contact">
-          <p>
-            You can also check me out directly using the following contact
-            information:
-          </p>
-          <a href="mailto:">test@mail.com</a><br />
-          <a href="tel:+3312345678">+3312345678</a>
+              <input class="form_button" type="submit" value="Submit" />
+            </form>
+          </section>
+          <div class="main_photo">
+            <img
+              src="../media/photos/C-portfolio-JPEG-600.jpg"
+              alt="Smily portrait of Ralph"
+              srcset="
+                ../media/photos/C-portfolio-AVIF-200.avif 200w,
+                ../media/photos/C-portfolio-AVIF-300.avif 300w,
+                ../media/photos/C-portfolio-AVIF-400.avif 400w,
+                ../media/photos/C-portfolio-AVIF-600.avif 600w,
+                ../media/photos/C-portfolio-JPEG-300.avif 300w
+              "
+            />
+          </div>
         </div>
-
-        <div class="button">Call to action button</div>
       </article>
       <div class="illustration_page"></div>
       <footer>
+        <div class="ralph_logo_wrapper">
+          <img src="../media/svg/logo-couleur-dalia.svg" alt="Ralph's logo" />
+        </div>
         <div class="logos_wrapper">
           <a href="https://github.com/RalphPastel972"
-            ><img src="../media/svg/github.svg" alt="Github's logo"
+            ><img
+              src="../media/svg/github.svg"
+              alt="Github's logo"
+              title="Check my github repositories"
           /></a>
           <a href="https://www.linkedin.com/in/ralphpastel/"
-            ><img src="../media/svg/linkedin-logo.svg" alt="Linkedin's logo"
+            ><img
+              src="../media/svg/linkedin-logo.svg"
+              alt="Linkedin's logo"
+              title="Check my linkedin profile"
+          /></a>
+          <a href="https://www.freecodecamp.org/Ralph972"
+            ><img
+              src="../media/svg/freecode_camp-logo.svg"
+              alt="Freecode camp's logo"
+              title="Check my Freecode camp profile"
+          /></a>
+          <a href="https://www.freecodecamp.org/Ralph972"
+            ><img
+              src="../media/svg/frontend-mentor-seeklogo.svg"
+              alt="Frontend Mentor's logo"
+              title="Check my Frontend mentor's profile"
           /></a>
         </div>
       </footer>

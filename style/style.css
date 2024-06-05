@@ -32,14 +32,13 @@ main {
 
 /* Styling of Header and Navbar */
 header {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   background-color: var(--primary-pink-pastel);
   padding: 10px 15px;
   border-radius: 20px 20px 0 0;
 
-  .logos_wrapper img {
+  .ralph_logo_wrapper img {
     max-width: 50px;
     width: 100%;
   }
@@ -66,12 +65,17 @@ header {
   }
 }
 
-/* Styling of the main content of the page */
+/* Styling of the main content of pages */
 .main_chapeau {
   display: flex;
 
   .main_chapeau_text {
     padding: 2em 8em 2em 2em;
+    width: 75%;
+  }
+
+  .chapeau_text {
+    padding: 0em 7em 2em 2em;
     width: 75%;
   }
 
@@ -88,6 +92,10 @@ header {
     font-size: xxx-large;
     line-height: 2em;
     margin: 0;
+  }
+
+  .page_title {
+    color: var(--primary-dalia-green);
   }
 
   p {
@@ -153,23 +161,22 @@ header {
 
 /* Below is style for my form. */
 form {
-  width: 60vw;
-  max-width: 500px;
   min-width: 300px;
   padding-bottom: 2em;
 
   fieldset {
     display: flex;
     flex-direction: column;
-    padding: 2em;
-    width: fit-content;
+    padding: 0;
     border: none;
     border-bottom: 3px solid var(--secondary-very-light-grey);
+    margin-bottom: 3em;
   }
 
   label {
     display: block;
-    margin: 0.5rem 0;
+    margin: 1rem 0;
+    border-radius: 10px;
   }
 
   input,
@@ -177,6 +184,23 @@ form {
     margin: 10px 0 0 0;
     width: 100%;
     min-height: 2em;
+    padding: 0.6em;
+    color: var(--primary-dalia-green);
+  }
+
+  .form_button {
+    color: #333;
+    border-color: rgb(243, 173, 196);
+    border-style: solid;
+    border-radius: 10px;
+    background-color: var(--primary-pink-pastel);
+    padding-top: 1em;
+    font-size: larger;
+  }
+
+  .form_button:hover {
+    background-color: var(--primary-dalia-green);
+    border-color: #6aa193;
   }
 }
 
@@ -203,15 +227,34 @@ table {
 footer {
   margin-top: auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  border-top: solid 1px var(--secondary-very-light-grey);
+  padding-top: 0.5em;
+  align-items: flex-end;
+
+  .ralph_logo_wrapper {
+    position: relative;
+  }
+
+  .ralph_logo_wrapper img {
+    max-width: 50px;
+    width: 100%;
+  }
+
+  img[title]::after {
+    color: red;
+    background-color: rebeccapurple;
+  }
 
   .logos_wrapper img {
-    max-width: 25px;
+    max-height: 1.5em;
     width: 100%;
   }
 
   .logos_wrapper {
     display: flex;
     gap: 1.5em;
+    position: relative;
+    left: calc(50% - 50px);
   }
 }
