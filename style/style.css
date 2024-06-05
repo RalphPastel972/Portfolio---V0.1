@@ -114,7 +114,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  gap: 1em;
+  gap: 2.5em;
   margin-bottom: 2em;
 
   .main_chapeau_text {
@@ -125,10 +125,9 @@ header {
   .project_card {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    max-width: fit-content;
     min-width: 250px;
     height: fit-content;
-    justify-items: center;
     box-shadow: 3px 3px 10px var(--secondary-soft-grey);
   }
 
@@ -293,5 +292,9 @@ footer {
   .projects_section {
     display: grid;
     grid-template-columns: 1fr;
+
+    .project_card {
+      margin: 0 2rem;
+    }
   }
 }
