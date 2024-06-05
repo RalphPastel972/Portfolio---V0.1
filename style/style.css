@@ -194,7 +194,7 @@ form {
     border-style: solid;
     border-radius: 10px;
     background-color: var(--primary-pink-pastel);
-    padding-top: 1em;
+    padding: 1em;
     font-size: larger;
   }
 
@@ -256,5 +256,27 @@ footer {
     gap: 1.5em;
     position: relative;
     left: calc(50% - 50px);
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main_photo {
+    display: none;
+  }
+
+  .main_chapeau {
+    .main_chapeau_text,
+    .chapeau_text {
+      padding: 2em 2em 2em 2em;
+      width: 100%;
+    }
+
+    h1 {
+      font-weight: 400;
+      font-size: 2.5rem;
+      line-height: 1.3em;
+      margin: 0;
+    }
   }
 }
