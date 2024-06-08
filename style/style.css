@@ -125,9 +125,6 @@ header {
   .project_card {
     display: flex;
     flex-direction: column;
-    max-width: fit-content;
-    min-width: 250px;
-    height: fit-content;
     box-shadow: 3px 3px 10px var(--secondary-soft-grey);
   }
 
@@ -150,6 +147,10 @@ header {
   .project_card_description {
     padding: 1em;
     margin: 1em 2em;
+  }
+
+  .project_card:hover {
+    transform: perspective(800px) rotateY(5deg) scale(1.1) rotateX(2deg);
   }
 }
 
