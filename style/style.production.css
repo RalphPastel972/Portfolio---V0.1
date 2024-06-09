@@ -1,0 +1,375 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100dvw;
+  min-height: 100dvh;
+  font-family: georama;
+  padding: 16px;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+  min-height: calc(100vh - 2 * 16px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.dalia_style {
+  color: #89beb1;
+}
+
+/* Styling of Header and Navbar */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #fbf0f0;
+  padding: 10px 15px;
+  border-radius: 20px 20px 0 0;
+
+  .ralph_logo_wrapper img {
+    max-width: 50px;
+    width: 100%;
+  }
+
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  nav > ul > li {
+    display: inline;
+    padding: 10px 20px;
+    font-size: large;
+  }
+
+  nav > ul > li > a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  nav > ul > li:hover {
+    background-color: #89beb1;
+    border-radius: 15px;
+  }
+}
+
+/* Styling of the main content of pages */
+.main_chapeau {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  .main_chapeau_text {
+    padding: 2em 8em 2em 2em;
+    width: 75%;
+  }
+
+  .chapeau_text_without_pic {
+    padding: 2em 2em 2em 2em;
+    width: 100%;
+  }
+
+  .chapeau_text {
+    padding: 0em 7em 2em 2em;
+    width: 75%;
+  }
+
+  .main_photo {
+    width: 30%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-weight: 400;
+    font-size: xxx-large;
+    line-height: 2em;
+    margin: 0;
+  }
+
+  .page_title {
+    color: #89beb1;
+  }
+
+  p {
+    line-height: 2em;
+    font-size: larger;
+  }
+}
+
+/* Work Styling */
+.projects_section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2.5em 1fr 2.5em 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 2.5em;
+  margin-bottom: 2em;
+
+  .main_chapeau_text {
+    padding: 2em 2em 2em 2em;
+    width: 100%;
+  }
+
+  .project_card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-shadow: 3px 3px 10px #828282;
+    box-shadow: 3px 3px 10px #828282;
+  }
+
+  .project_card_title {
+    font-size: large;
+    font-weight: 500;
+    color: #89beb1;
+    text-align: center;
+    padding: 0.5em;
+  }
+
+  .project_card_illustration {
+    width: 80%;
+    height: 150px;
+    border: 1px solid #828282;
+    margin: 1em auto;
+    text-align: center;
+  }
+
+  .project_card_description {
+    padding: 1em;
+    margin: 1em 2em;
+  }
+
+  .project_card:hover {
+    -webkit-animation: card_emphasis 0.2s ease-in forwards;
+    animation: card_emphasis 0.2s ease-in forwards;
+  }
+}
+
+@-webkit-keyframes card_emphasis {
+  0% {
+  }
+  100% {
+    -webkit-transform: perspective(1200px) rotateY(3deg) scale(1.07)
+      rotateX(1deg);
+    transform: perspective(1200px) rotateY(3deg) scale(1.07) rotateX(1deg);
+    -webkit-box-shadow: 0 0 5px 5px #89beb1;
+    box-shadow: 0 0 5px 5px #89beb1;
+  }
+}
+
+@keyframes card_emphasis {
+  0% {
+  }
+  100% {
+    -webkit-transform: perspective(1200px) rotateY(3deg) scale(1.07)
+      rotateX(1deg);
+    transform: perspective(1200px) rotateY(3deg) scale(1.07) rotateX(1deg);
+    -webkit-box-shadow: 0 0 5px 5px #89beb1;
+    box-shadow: 0 0 5px 5px #89beb1;
+  }
+}
+
+/* Contact styling */
+.button {
+  background-color: #fbf0f0;
+  color: #000;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: rgb(232, 104, 211);
+}
+
+/* Below, form specifications */
+form {
+  min-width: 300px;
+  padding-bottom: 2em;
+
+  fieldset {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0;
+    border: none;
+    border-bottom: 3px solid #e6e6e6;
+    margin-bottom: 3em;
+  }
+
+  label {
+    display: block;
+    margin: 1rem 0;
+    border-radius: 10px;
+  }
+
+  input {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+    padding: 0.6em;
+    color: #89beb1;
+  }
+
+  textarea {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+    padding: 0.6em;
+    color: #89beb1;
+  }
+
+  .form_button {
+    color: #333;
+    border-color: rgb(243, 173, 196);
+    border-style: solid;
+    border-radius: 10px;
+    background-color: #fbf0f0;
+    padding: 1em;
+    font-size: larger;
+  }
+
+  .form_button:hover {
+    background-color: #89beb1;
+    border-color: #6aa193;
+  }
+}
+
+/* Below, table specifications */
+table {
+  width: 60%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+
+  .skill {
+    font-weight: bold;
+  }
+
+  th {
+    text-align: left;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    font-weight: normal;
+  }
+}
+
+/* Styling of the footer */
+footer {
+  margin-top: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  border-top: solid 1px #e6e6e6;
+  padding-top: 0.5em;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+
+  .ralph_logo_wrapper {
+    position: relative;
+  }
+
+  .ralph_logo_wrapper img {
+    max-width: 50px;
+    width: 100%;
+  }
+
+  img[title]::after {
+    color: red;
+    background-color: rebeccapurple;
+  }
+
+  .logos_wrapper img {
+    max-height: 1.5em;
+    width: 100%;
+  }
+
+  .logos_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1.5em;
+    position: relative;
+    left: calc(50% - 50px);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Responsiveness */
+@media screen and (max-width: 800px) {
+  .main_photo {
+    display: none;
+  }
+
+  .main_chapeau {
+    .main_chapeau_text,
+    .chapeau_text {
+      padding: 2em 2em 2em 2em;
+      width: 100%;
+    }
+
+    h1 {
+      font-weight: 400;
+      font-size: 2.5rem;
+      line-height: 1.3em;
+      margin: 0;
+    }
+  }
+
+  .projects_section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+
+    .project_card {
+      margin: 0 2rem;
+    }
+  }
+}

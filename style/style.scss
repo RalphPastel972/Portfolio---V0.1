@@ -1,0 +1,60 @@
+$main-font: sans-serif;
+$primary-color-grey: rgba(0, 0, 0, 0.3);
+$primary-color-dark-blue: #112055;
+$primary-color-dark-green: #4f9d92;
+$primary-color-pure-white: #fff;
+$primary-color-pure-black: #000;
+$bg-color-light: lighten($primary-color-grey, 20%);
+
+%typical-box-shadow {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 4px 3px 19px 0px $primary-color-grey;
+  }
+
+%main-wrapper-settings {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+  }
+
+
+.box__wrapper {
+    @extend %main-wrapper-settings;
+    font-family: $main-font;
+  }
+  
+  
+.box-primary {
+@extend %typical-box-shadow;
+background-color: $primary-color-dark-blue;
+color: $primary-color-pure-white;
+    &:hover {
+    box-shadow: none;
+    }
+  }
+
+.box-primary-lighter {
+@extend %typical-box-shadow;
+background-color:$bg-color-light;
+    &:hover {
+    box-shadow: none;
+    }
+  }
+
+.box-primary-darker {
+@extend %typical-box-shadow;
+    &:hover {
+    box-shadow: none;
+    }
+  }
+
+.box-secondary {
+@extend %typical-box-shadow;
+background-color: $primary-color-dark-green;
+color: $primary-color-pure-black;
+    &:hover {
+    box-shadow: none;
+    }
+  }
