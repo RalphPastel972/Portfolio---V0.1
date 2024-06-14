@@ -263,17 +263,24 @@ footer {
     background-color: rebeccapurple;
   }
 
-  .logos_wrapper img {
-    max-height: 1.5em;
-    width: 100%;
-  }
-
   .logos_wrapper {
     display: flex;
+    justify-content: center;
+    width: fit-content;
     gap: 1.5em;
     position: relative;
     left: calc(50% - 50px);
     transform: translate(-50%, -50%);
+
+    img {
+      max-height: 1.5em;
+      width: 150%;
+    }
+
+    a {
+      /* This is necessary just for Safari! */
+      width: 30px;
+    }
   }
 }
 
